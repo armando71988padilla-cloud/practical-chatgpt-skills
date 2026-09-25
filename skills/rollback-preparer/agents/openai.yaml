@@ -1,0 +1,3 @@
+interface:
+  display_name: "Rollback Preparer"
+  short_description: "Plan the undo path before risky changes"
