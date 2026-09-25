@@ -1,0 +1,3 @@
+interface:
+  display_name: "Copy Paste Guard"
+  short_description: "Check terminal commands before you run them"
