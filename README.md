@@ -9,7 +9,8 @@ Free, open-source ChatGPT Skills for safer development, debugging, Git, and syst
 | Copy Paste Guard | Review terminal commands before execution and rewrite risky blocks into safer steps | v1.0.0 |
 | Rollback Preparer | Build a proven backup and restore path before risky changes | v1.0.0 |
 | Runtime Target Verifier | Prove which file, binary, service, or runtime target is actually live before patching | v1.0.0 |
-| Log Slice Analyzer | Separate failure-relevant log signal from noise and identify the smallest next checks | v1.0.0 release candidate |
+| Log Slice Analyzer | Separate failure-relevant log signal from noise and identify the smallest next checks | v1.0.0 |
+| Issue Isolator | Reduce messy multi-symptom bugs to one testable boundary and one useful next check | v1.0.0 release candidate |
 
 More skills will be added only when they solve a distinct, repeatable problem.
 
