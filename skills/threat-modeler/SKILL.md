@@ -1,6 +1,6 @@
 ---
 name: threat-modeler
-description: Build a defensive threat model for an application, service, device workflow, plugin, update path, privileged helper, local IPC/API, data pipeline, or cross-platform feature. Use when a user asks what could go wrong under hostile, compromised, malformed, or stale input; wants assets, trust boundaries, attacker positions, privilege transitions, abuse paths, mitigations, or security verification tests; or needs to review a design before implementation. Keep claims evidence-bound, prioritize realistic boundary-crossing threats, and do not provide exploit payloads or harmful operational instructions.
+description: Build a defensive threat model for an application, service, device workflow, plugin, update path, privileged helper, local IPC/API, data pipeline, or cross-platform feature. Use when a user asks what could go wrong under hostile, compromised, malformed, or stale input; wants assets, trust boundaries, attacker positions, privilege transitions, abuse paths, mitigations, or security verification tests; or needs to review a design before implementation. Keep claims evidence-bound, prioritize realistic boundary-crossing threats, and keep analysis defensive and architectural.
 ---
 
 # Threat Modeler
@@ -194,18 +194,7 @@ Prefer tests that prove the boundary rejects what it must reject, not only that 
 
 ## Safe analysis boundary
 
-Keep analysis defensive and architectural.
-
-Describe abuse paths only to the level necessary to improve design, policy, and tests. Do not provide:
-
-- exploit payloads
-- credential theft procedures
-- persistence instructions
-- evasion instructions
-- destructive third-party targeting steps
-- weaponized malware behavior
-
-When more detail would materially increase offensive capability, stay at the boundary/mitigation/testing level.
+Keep analysis defensive and architectural. Describe misuse paths only to the level necessary to improve design, policy, and tests. Avoid step-by-step offensive procedures or operational instructions that are unnecessary for mitigation. Stay at the boundary, control, and verification level.
 
 ## Current external assumptions
 
