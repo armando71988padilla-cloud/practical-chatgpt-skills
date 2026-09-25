@@ -1,55 +1,135 @@
 # Practical ChatGPT Skills
 
-Free, open-source ChatGPT Skills for safer development, debugging, Git, architecture, and system administration workflows.
+A small collection of free, open-source ChatGPT Skills for safer development, debugging, Git, architecture, and system administration.
 
-## Available skills
+The goal is simple: solve repeatable technical problems with clear workflows, conservative defaults, readable source, and no hidden behavior.
 
-| Skill | Purpose | Status |
-| --- | --- | --- |
-| Copy Paste Guard | Review terminal commands before execution and rewrite risky blocks into safer steps | v1.0.0 |
-| Rollback Preparer | Build a proven backup and restore path before risky changes | v1.0.0 |
-| Runtime Target Verifier | Prove which file, binary, service, or runtime target is actually live before patching | v1.0.0 |
-| Log Slice Analyzer | Separate failure-relevant log signal from noise and identify the smallest next checks | v1.0.0 |
-| Issue Isolator | Reduce messy multi-symptom bugs to one testable boundary and one useful next check | v1.0.0 |
-| Git State Guardian | Prove repository state, staging scope, alignment, and Git safety before risky operations | v1.0.0 |
-| Tauri Security Boundary Auditor | Audit Tauri v2 native permissions, IPC, plugins, sidecars, CSP, remote content, and updater trust | v1.0.0 |
-| Dependency Supply-Chain Auditor | Audit dependency provenance, locks, executable install hooks, and special package sources | v1.0.0 |
-| Cross-Platform Adapter Planner | Split shared product behavior from platform-specific adapters and capability limits | v1.0.0 |
-| Threat Modeler | Map assets, trust boundaries, realistic abuse paths, mitigations, and security verification tests | v1.0.0 release candidate |
+## Quick start
 
-More skills will be added only when they solve a distinct, repeatable problem.
+1. Pick a Skill below.
+2. Open its release page or use the direct ZIP link.
+3. Review the public source if you want to inspect exactly what it does.
+4. Upload the ZIP in ChatGPT Skills.
+5. Use the Skill normally in chat.
 
-## Install a skill
+Each release publishes a SHA-256 so you can verify the downloaded archive.
 
-1. Open the skill's latest GitHub Release.
-2. Download the versioned release ZIP asset.
-3. In ChatGPT, open Skills and upload the ZIP.
-4. Review the included `SKILL.md`, scripts, and references before using it.
+See [Installing Skills](docs/installing-skills.md) and [Release checksums](docs/checksums.md).
 
-See `docs/installing-skills.md` for details.
+## Skill catalog
 
-## Security and trust
+### Safety and change control
 
-This project follows a source-first model:
+| Skill | What it helps with | Source | Release | Download |
+| --- | --- | --- | --- | --- |
+| **Copy Paste Guard** | Reviews terminal commands before execution and rewrites risky command blocks into safer steps. | [Source](skills/copy-paste-guard) | [v1.0.0](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/releases/tag/copy-paste-guard-v1.0.0) | [ZIP](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/releases/download/copy-paste-guard-v1.0.0/copy-paste-guard-v1.0.0-release.zip) |
+| **Rollback Preparer** | Builds a proven backup and restore path before risky changes. | [Source](skills/rollback-preparer) | [v1.0.0](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/releases/tag/rollback-preparer-v1.0.0) | [ZIP](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/releases/download/rollback-preparer-v1.0.0/rollback-preparer-v1.0.0-release.zip) |
 
-- source is visible before installation
-- helper scripts are readable and non-obfuscated
-- skills should avoid network access unless their purpose explicitly requires it
-- skills should avoid mutation unless their purpose explicitly requires it
-- release artifacts are built from the corresponding public source tree
-- SHA-256 hashes are published with release artifacts
+### Debugging and troubleshooting
 
-See `SECURITY.md` and `docs/security-model.md`.
+| Skill | What it helps with | Source | Release | Download |
+| --- | --- | --- | --- | --- |
+| **Runtime Target Verifier** | Proves which file, binary, service, container, or runtime target is actually live before patching. | [Source](skills/runtime-target-verifier) | [v1.0.0](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/releases/tag/runtime-target-verifier-v1.0.0) | [ZIP](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/releases/download/runtime-target-verifier-v1.0.0/runtime-target-verifier-v1.0.0-release.zip) |
+| **Log Slice Analyzer** | Separates failure-relevant log signal from warning noise and identifies the smallest useful next checks. | [Source](skills/log-slice-analyzer) | [v1.0.0](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/releases/tag/log-slice-analyzer-v1.0.0) | [ZIP](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/releases/download/log-slice-analyzer-v1.0.0/log-slice-analyzer-v1.0.0-release.zip) |
+| **Issue Isolator** | Reduces messy multi-symptom bugs to one testable boundary and one useful next check. | [Source](skills/issue-isolator) | [v1.0.0](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/releases/tag/issue-isolator-v1.0.0) | [ZIP](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/releases/download/issue-isolator-v1.0.0/issue-isolator-v1.0.0-release.zip) |
+
+### Git and repository safety
+
+| Skill | What it helps with | Source | Release | Download |
+| --- | --- | --- | --- | --- |
+| **Git State Guardian** | Checks repository identity, staging scope, worktree state, upstream alignment, and risky files before Git operations. | [Source](skills/git-state-guardian) | [v1.0.0](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/releases/tag/git-state-guardian-v1.0.0) | [ZIP](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/releases/download/git-state-guardian-v1.0.0/git-state-guardian-v1.0.0-release.zip) |
+
+### Architecture and security
+
+| Skill | What it helps with | Source | Release | Download |
+| --- | --- | --- | --- | --- |
+| **Tauri Security Boundary Auditor** | Audits Tauri v2 capabilities, permissions, IPC, plugins, sidecars, CSP, remote content, and updater trust. | [Source](skills/tauri-security-boundary-auditor) | [v1.0.0](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/releases/tag/tauri-security-boundary-auditor-v1.0.0) | [ZIP](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/releases/download/tauri-security-boundary-auditor-v1.0.0/tauri-security-boundary-auditor-v1.0.0-release.zip) |
+| **Dependency Supply-Chain Auditor** | Reviews dependency provenance, lockfiles, executable install hooks, alternate indexes, VCS/path sources, and reproducibility. | [Source](skills/dependency-supply-chain-auditor) | [v1.0.0](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/releases/tag/dependency-supply-chain-auditor-v1.0.0) | [ZIP](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/releases/download/dependency-supply-chain-auditor-v1.0.0/dependency-supply-chain-auditor-v1.0.0-release.zip) |
+| **Cross-Platform Adapter Planner** | Separates shared product behavior from platform-specific adapters, privileges, and capability limits. | [Source](skills/cross-platform-adapter-planner) | [v1.0.0](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/releases/tag/cross-platform-adapter-planner-v1.0.0) | [ZIP](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/releases/download/cross-platform-adapter-planner-v1.0.0/cross-platform-adapter-planner-v1.0.0-release.zip) |
+| **Threat Modeler** | Maps assets, trust boundaries, realistic abuse paths, mitigations, and security verification tests. | [Source](skills/threat-modeler) | [v1.0.0](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/releases/tag/threat-modeler-v1.0.0) | [ZIP](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/releases/download/threat-modeler-v1.0.0/threat-modeler-v1.0.0-release.zip) |
+
+## Which one should I use?
+
+| Situation | Start here |
+| --- | --- |
+| "Is this terminal command safe to paste?" | **Copy Paste Guard** |
+| "How do I undo this before I change it?" | **Rollback Preparer** |
+| "Am I editing the code that is actually running?" | **Runtime Target Verifier** |
+| "Which lines in these logs actually matter?" | **Log Slice Analyzer** |
+| "Five things look broken; where do I start?" | **Issue Isolator** |
+| "Is this repo safe to commit/reset/clean/push?" | **Git State Guardian** |
+| "Is my Tauri native boundary too broad?" | **Tauri Security Boundary Auditor** |
+| "What third-party code am I trusting here?" | **Dependency Supply-Chain Auditor** |
+| "What belongs in shared core versus OS adapters?" | **Cross-Platform Adapter Planner** |
+| "How could this design be abused across trust boundaries?" | **Threat Modeler** |
+
+## Trust at a glance
+
+The project is intentionally source-first and boring in the good way.
+
+| Skill | Bundled helper | Helper network access | Helper mutates project/system state |
+| --- | --- | --- | --- |
+| Copy Paste Guard | Read-only command-text scanner | No | No |
+| Rollback Preparer | None | — | — |
+| Runtime Target Verifier | None | — | — |
+| Log Slice Analyzer | None | — | — |
+| Issue Isolator | None | — | — |
+| Git State Guardian | Read-only Git/state reporter | No | No |
+| Tauri Security Boundary Auditor | Read-only static scanner | No | No |
+| Dependency Supply-Chain Auditor | Read-only manifest/lock inventory | No | No |
+| Cross-Platform Adapter Planner | None | — | — |
+| Threat Modeler | None | — | — |
+
+A Skill may recommend commands or actions for the user to review when that is its purpose. The table above describes only bundled helper behavior.
+
+## Release and security model
+
+Every public release is intended to pass this gate:
+
+```text
+public source
+    ↓
+skill validation
+    ↓
+helper tests (when a helper exists)
+    ↓
+private-identifier / declassification scan
+    ↓
+secret-pattern scan
+    ↓
+package inspection
+    ↓
+SHA-256 published with release
+```
+
+Project rules:
+
+- Source is visible before installation.
+- Helper code is readable and non-obfuscated.
+- No hidden binary payloads are intentionally bundled.
+- Helper scripts are read-only unless a future Skill explicitly documents otherwise.
+- Network access is avoided unless a Skill genuinely requires it and documents why.
+- Public examples use generic or fictional infrastructure rather than private project data.
+- Security findings distinguish proven evidence from assumptions or heuristic warnings.
+
+See [SECURITY.md](SECURITY.md) and [Security model](docs/security-model.md).
 
 ## Repository layout
 
 ```text
-skills/      installable skill source
-docs/        user and security documentation
-tests/       public test fixtures and release checks
-dist/        local release artifacts; GitHub Releases are the preferred distribution surface
+skills/      public Skill source
+docs/        installation, security, release, and supporting documentation
+tests/       public manual test fixtures
 ```
+
+GitHub Releases are the preferred distribution surface for installable ZIPs.
+
+## Contributing
+
+Contributions are welcome when they add a distinct, reusable workflow instead of duplicating an existing Skill.
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
 
 ## License
 
-MIT. See `LICENSE`.
+MIT. See [LICENSE](LICENSE).
