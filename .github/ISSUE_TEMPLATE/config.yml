@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/security/advisories/new
+    about: Report vulnerabilities privately. Do not post sensitive security details in a public issue.
+  - name: Questions and usage help
+    url: https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/discussions
+    about: Ask questions and share usage ideas in Discussions.
