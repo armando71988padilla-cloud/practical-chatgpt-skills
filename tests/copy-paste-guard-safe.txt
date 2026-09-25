@@ -1,0 +1,3 @@
+pwd
+git status --short
+python3 --version
