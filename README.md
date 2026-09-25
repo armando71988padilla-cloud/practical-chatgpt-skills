@@ -14,7 +14,7 @@ More skills will be added only when they solve a distinct, repeatable problem.
 ## Install a skill
 
 1. Open the skill's latest GitHub Release.
-2. Download its `skill.zip` asset.
+2. Download the versioned release ZIP asset.
 3. In ChatGPT, open Skills and upload the ZIP.
 4. Review the included `SKILL.md`, scripts, and references before using it.
 
