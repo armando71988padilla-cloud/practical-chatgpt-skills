@@ -1,0 +1,3 @@
+interface:
+  display_name: "Tauri Security Boundary Auditor"
+  short_description: "Audit Tauri v2 native permissions and trust boundaries"
