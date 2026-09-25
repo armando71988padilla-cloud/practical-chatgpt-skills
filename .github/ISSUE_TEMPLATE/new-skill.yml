@@ -1,0 +1,62 @@
+name: New Skill idea
+description: Propose a distinct, reusable Skill that does not duplicate the existing catalog
+title: "[Skill idea]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Good Skill ideas solve a repeatable problem with a clear boundary. Please describe the problem before proposing implementation details.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What repeatable problem would this Skill help with?
+    validations:
+      required: true
+
+  - type: textarea
+    id: users
+    attributes:
+      label: Who would use it?
+      description: What kind of user or workflow benefits from this?
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Example request
+      description: Give one short example of what someone might ask the Skill to do.
+    validations:
+      required: true
+
+  - type: textarea
+    id: distinction
+    attributes:
+      label: Why is it distinct?
+      description: Explain why an existing Skill does not already cover this responsibility.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: helper
+    attributes:
+      label: Would deterministic helper code materially help?
+      options:
+        - No / probably not
+        - Maybe
+        - Yes
+        - Unsure
+    validations:
+      required: true
+
+  - type: textarea
+    id: risk
+    attributes:
+      label: Safety considerations
+      description: Would the Skill need network access, mutation, elevated privilege, shell/process execution, or sensitive data?
+    validations:
+      required: false
