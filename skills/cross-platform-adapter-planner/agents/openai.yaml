@@ -1,0 +1,3 @@
+interface:
+  display_name: "Cross-Platform Adapter Planner"
+  short_description: "Split shared product logic from platform-specific adapters"
