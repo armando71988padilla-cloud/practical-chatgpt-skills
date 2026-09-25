@@ -1,0 +1,81 @@
+name: Bug report
+description: Report incorrect, confusing, or unsafe behavior in a released Skill
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the project. Do not paste credentials, tokens, private infrastructure, or sensitive logs into a public issue.
+
+  - type: dropdown
+    id: skill
+    attributes:
+      label: Skill
+      description: Which Skill is affected?
+      options:
+        - Copy Paste Guard
+        - Rollback Preparer
+        - Runtime Target Verifier
+        - Log Slice Analyzer
+        - Issue Isolator
+        - Git State Guardian
+        - Tauri Security Boundary Auditor
+        - Dependency Supply-Chain Auditor
+        - Cross-Platform Adapter Planner
+        - Threat Modeler
+        - Repository / documentation
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Release version or tag, if known
+      placeholder: v1.0.0
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect the Skill to do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+      description: Provide the smallest safe/redacted prompt or scenario that reproduces the problem.
+      placeholder: Please redact secrets, private URLs, hostnames, personal data, and internal infrastructure.
+    validations:
+      required: true
+
+  - type: textarea
+    id: safety
+    attributes:
+      label: Safety or trust impact
+      description: Did the behavior risk data loss, secret exposure, unwanted mutation, network access, or misleading security conclusions?
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Public-data confirmation
+      options:
+        - label: I removed secrets, credentials, personal data, and private infrastructure details from this report.
+          required: true
