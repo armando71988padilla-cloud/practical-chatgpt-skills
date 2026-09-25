@@ -1,0 +1,3 @@
+interface:
+  display_name: "Dependency Supply-Chain Auditor"
+  short_description: "Audit dependency provenance, locks, and install risk"
