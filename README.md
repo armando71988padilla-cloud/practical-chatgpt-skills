@@ -13,7 +13,8 @@ Free, open-source ChatGPT Skills for safer development, debugging, Git, and syst
 | Issue Isolator | Reduce messy multi-symptom bugs to one testable boundary and one useful next check | v1.0.0 |
 | Git State Guardian | Prove repository state, staging scope, alignment, and Git safety before risky operations | v1.0.0 |
 | Tauri Security Boundary Auditor | Audit Tauri v2 native permissions, IPC, plugins, sidecars, CSP, remote content, and updater trust | v1.0.0 |
-| Dependency Supply-Chain Auditor | Audit dependency provenance, locks, executable install hooks, and special package sources | v1.0.0 release candidate |
+| Dependency Supply-Chain Auditor | Audit dependency provenance, locks, executable install hooks, and special package sources | v1.0.0 |
+| Cross-Platform Adapter Planner | Split shared product behavior from platform-specific adapters and capability limits | v1.0.0 release candidate |
 
 More skills will be added only when they solve a distinct, repeatable problem.
 
