@@ -1,0 +1,3 @@
+interface:
+  display_name: "Git State Guardian"
+  short_description: "Check Git state before risky repository changes"
