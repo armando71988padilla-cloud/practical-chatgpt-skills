@@ -1,0 +1,3 @@
+interface:
+  display_name: "Threat Modeler"
+  short_description: "Map trust boundaries, abuse paths, and testable mitigations"
