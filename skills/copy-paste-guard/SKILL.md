@@ -41,20 +41,31 @@ Check these before style or convenience issues:
 - destructive Git operations such as hard reset, aggressive clean, or force push
 - secrets, tokens, passwords, or API keys embedded in command lines
 - quoting, globbing, variable expansion, redirection, and line-continuation errors
-- disabled TLS verification or SSH host-key checking
-- multiple unrelated state changes chained into one paste
-- commands whose later steps assume earlier success without checking it
+- command chains where later steps run despite an earlier failure
+- disabled TLS or host-key verification
+
+## Verdict rules
+
+### PASS
+Use only when the command is low-risk as written and its target is sufficiently clear.
+
+### PASS WITH FIXES
+Use when the intent is reasonable but one or more concrete corrections are required before execution.
+
+### STOP
+Use when a destructive or privileged action targets an unproven path, a placeholder remains unresolved, credentials may be exposed, execution is intentionally obscured, or a safe rewrite depends on missing facts.
+
+Do not convert uncertainty into guessed values.
 
 ## Safe rewrite rules
 
-- Preserve the user's objective.
-- Prefer inspect -> mutate -> verify when mutation is required.
-- Keep high-risk actions in separate steps.
-- Keep elevation on the narrowest command that needs it.
-- Prefer preview or dry-run modes when the tool provides one.
-- Prefer explicit paths over broad wildcards for destructive actions.
-- Do not invent real values for unresolved placeholders.
-- Do not add destructive operations merely to make a command succeed.
+- Keep one risk surface per step.
+- Make `cd` or the absolute target explicit when relative paths matter.
+- Inspect before editing or deleting when the target is not already proven.
+- Back up before destructive changes when practical.
+- Use elevation only on the exact step that needs it.
+- Prefer preview or dry-run flags when the tool supports them.
+- Do not weaken TLS, host-key checks, execution policy, or permissions merely to make a command succeed.
 - Do not replace a user's workflow with an unrelated one unless safety requires it.
 - If the real value of a placeholder is unknown, ask for or derive it with a read-only pre-check instead of inventing it.
 
