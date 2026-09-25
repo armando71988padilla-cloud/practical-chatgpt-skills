@@ -1,6 +1,6 @@
 # Practical ChatGPT Skills
 
-Free, open-source ChatGPT Skills for safer development, debugging, Git, and system administration workflows.
+Free, open-source ChatGPT Skills for safer development, debugging, Git, architecture, and system administration workflows.
 
 ## Available skills
 
@@ -14,7 +14,8 @@ Free, open-source ChatGPT Skills for safer development, debugging, Git, and syst
 | Git State Guardian | Prove repository state, staging scope, alignment, and Git safety before risky operations | v1.0.0 |
 | Tauri Security Boundary Auditor | Audit Tauri v2 native permissions, IPC, plugins, sidecars, CSP, remote content, and updater trust | v1.0.0 |
 | Dependency Supply-Chain Auditor | Audit dependency provenance, locks, executable install hooks, and special package sources | v1.0.0 |
-| Cross-Platform Adapter Planner | Split shared product behavior from platform-specific adapters and capability limits | v1.0.0 release candidate |
+| Cross-Platform Adapter Planner | Split shared product behavior from platform-specific adapters and capability limits | v1.0.0 |
+| Threat Modeler | Map assets, trust boundaries, realistic abuse paths, mitigations, and security verification tests | v1.0.0 release candidate |
 
 More skills will be added only when they solve a distinct, repeatable problem.
 
