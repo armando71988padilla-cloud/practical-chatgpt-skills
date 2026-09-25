@@ -1,0 +1,3 @@
+interface:
+  display_name: "Log Slice Analyzer"
+  short_description: "Separate useful log signal from noise"
