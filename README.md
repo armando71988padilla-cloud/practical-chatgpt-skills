@@ -1,5 +1,10 @@
 # Practical ChatGPT Skills
 
+[![Skill Validation](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/actions/workflows/skill-validation.yml/badge.svg)](https://github.com/armando71988padilla-cloud/practical-chatgpt-skills/actions/workflows/skill-validation.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Public Skills](https://img.shields.io/badge/public%20skills-10-6f42c1.svg)](#skill-catalog)
+[![Security](https://img.shields.io/badge/security-private%20reporting-enabled-brightgreen.svg)](SECURITY.md)
+
 A small collection of free, open-source ChatGPT Skills for safer development, debugging, Git, architecture, and system administration.
 
 The goal is simple: solve repeatable technical problems with clear workflows, conservative defaults, readable source, and no hidden behavior.
@@ -15,6 +20,20 @@ The goal is simple: solve repeatable technical problems with clear workflows, co
 Each release publishes a SHA-256 so you can verify the downloaded archive.
 
 See [Installing Skills](docs/installing-skills.md) and [Release checksums](docs/checksums.md).
+
+## GitHub automation
+
+This repository now includes a small, human-controlled automation layer:
+
+- **Skill Validation** runs automatically on pushes and pull requests and checks Skill structure, Python helper syntax, release/test presence, and accidental compiled artifacts.
+- **Build Release Candidate** is a manual GitHub Action that builds one versioned Skill ZIP plus its SHA-256 file. It cannot publish a release or create a tag.
+- **Skill Release Steward** is a repository custom agent for preparing release-ready changes and PRs.
+- **Skill Security Reviewer** is a read-only custom agent for reviewing privacy leaks, helper behavior, workflow permissions, and evidence quality.
+- Structured **Bug report** and **New Skill idea** forms keep Issues useful.
+- **CODEOWNERS** requests maintainer review on repository changes.
+- Pull requests get a public-data, validation, and helper-behavior checklist automatically.
+
+See [Releasing a Skill](docs/releasing.md) for the human-approved release flow.
 
 ## Skill catalog
 
