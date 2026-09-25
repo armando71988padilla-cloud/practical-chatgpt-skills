@@ -1,0 +1,3 @@
+interface:
+  display_name: "Issue Isolator"
+  short_description: "Reduce messy bugs to one testable failure"
