@@ -11,7 +11,7 @@ Free, open-source ChatGPT Skills for safer development, debugging, Git, and syst
 | Runtime Target Verifier | Prove which file, binary, service, or runtime target is actually live before patching | v1.0.0 |
 | Log Slice Analyzer | Separate failure-relevant log signal from noise and identify the smallest next checks | v1.0.0 |
 | Issue Isolator | Reduce messy multi-symptom bugs to one testable boundary and one useful next check | v1.0.0 |
-| Git State Guardian | Prove repository state, staging scope, alignment, and Git safety before risky operations | v1.0.0 release candidate |
+| Git State Guardian | Prove repository state, staging scope, alignment, and Git safety before risky operations | v1.0.0 release candidate |\n| Tauri Security Boundary Auditor | Audit Tauri v2 native permissions, IPC, plugins, sidecars, CSP, remote content, and updater trust | v1.0.0 release candidate |
 
 More skills will be added only when they solve a distinct, repeatable problem.
 
